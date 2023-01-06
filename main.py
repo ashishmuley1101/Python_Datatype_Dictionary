@@ -1,17 +1,15 @@
 
-# Changing the Value of Dictionary in python using key
+# Accessing Elements from Dictionary datatype in python
 
-# use [] to change the value associated with a particular key.
+# use the keys to access their corresponding values.
 
-# Syntax : dictionary_name[key] = value_new
+# Syntax : dictionary_name[key] or print(dictionary_name[key])
 
 student_id = {111: "Crack", 112: "Mack", 113: "Joy"}
-print("Initial Dictionary: ", student_id)
-
-student_id[112] = "Jack"
-
-print("Updated Dictionary: ", student_id)
+print("Dictionary: ", student_id[111])
+print("Dictionary: ", student_id[113])
 # Output
-# Initial Dictionary:  {111: 'Crack', 112: 'Mack', 113: 'Joy'}
-# Updated Dictionary:  {111: 'Crack', 112: 'Jack', 113: 'Joy'}
+# Dictionary:  Crack
+# Dictionary:  Joy
+
 
