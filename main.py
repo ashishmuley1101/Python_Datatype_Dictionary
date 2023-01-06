@@ -1,20 +1,19 @@
 
-# Dictionary Membership Test in python using in and not in over key
+# Iterating Through a Dictionary in python using for loop
 
-# test if a key is in a dictionary or not using the keyword in. Notice that the membership test is only
-# for the keys and not for the values.
-# Syntax :  del dictionary_name[key]
+#  iterated through each key in the dictionary using the for loop.
 
-# Membership Test for Dictionary Keys
 squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
 
-# Output: True
-print(1 in squares)  # O/p :  True
+for key in squares:
+    print(squares[key])
 
-print(2 not in squares)  # O/p : True
-
-# membership tests for key only not value
-print(49 in squares)  # O/p : False
+# Output :
+# 1
+# 9
+# 25
+# 49
+# 81
 
 
 
