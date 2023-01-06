@@ -1,17 +1,20 @@
 
-# Python dictionary len() method
+# Python Dictionary clear() method
 
-#  The len() function returns the number of items (length) in an object.
-# The syntax of the len() function is: len(iterable)
+#  The clear() method removes all items from the dictionary.
+# The syntax of the clear() function is: dictionary.clear()
 
-testDict = {1: 'one', 2: 'two'}
-print(testDict, 'length is', len(testDict))
+cityTemperature = {"New York": 18, "Texas": 26}
 
-testDict = {}
-print(testDict, 'length is', len(testDict))
+print("Dictionary before clear():", cityTemperature)
+
+# removes all the items from the dictionary
+cityTemperature.clear()
+
+print("Dictionary after clear():", cityTemperature)
 
 # Output :
-# {1: 'one', 2: 'two'} length is 2
-# {} length is 0
+# Dictionary before clear(): {'New York': 18, 'Texas': 26}
+# Dictionary after clear(): {}
 
 
