@@ -1,17 +1,17 @@
 
-# Adding Elements to a Python Dictionary using key
+# Changing the Value of Dictionary in python using key
 
-# add elements to a dictionary using the name of the dictionary with []
+# use [] to change the value associated with a particular key.
 
-# Syntax : dictionary_name[key_new] = value
+# Syntax : dictionary_name[key] = value_new
 
-capital_city = {"Nepal": "Kathmandu", "England": "London"}
-print("Initial Dictionary: ",capital_city)
+student_id = {111: "Crack", 112: "Mack", 113: "Joy"}
+print("Initial Dictionary: ", student_id)
 
-capital_city["India"] = "Delhi"
+student_id[112] = "Jack"
 
-print("Updated Dictionary: ", capital_city)
+print("Updated Dictionary: ", student_id)
 # Output
-# Initial Dictionary:  {'Nepal': 'Kathmandu', 'England': 'London'}
-# Updated Dictionary:  {'Nepal': 'Kathmandu', 'England': 'London', 'India': 'Delhi'}
+# Initial Dictionary:  {111: 'Crack', 112: 'Mack', 113: 'Joy'}
+# Updated Dictionary:  {111: 'Crack', 112: 'Jack', 113: 'Joy'}
 
