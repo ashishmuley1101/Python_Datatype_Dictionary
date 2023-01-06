@@ -1,19 +1,23 @@
 
-# Iterating Through a Dictionary in python using for loop
+# Python dictionary all() method
 
-#  iterated through each key in the dictionary using the for loop.
+#  The all() function returns True if all elements in the given iterable are true. If not, it returns False.
+# The syntax of the all() function is: all(iterable)
 
-squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
+s = {0: 'False', 1: 'False'}
+print(all(s))  # O/p : False
 
-for key in squares:
-    print(squares[key])
+s = {1: 'True', 2: 'True'}   # O/p : True
+print(all(s))
 
-# Output :
-# 1
-# 9
-# 25
-# 49
-# 81
+s = {1: 'True', False: 0}  # O/p : False
+print(all(s))
+
+s = {}
+print(all(s))  # O/p : True
+
+s = {'0': 'True'}
+print(all(s))  # O/p : True
 
 
 
