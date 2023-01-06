@@ -1,23 +1,29 @@
 
-# Python dictionary all() method
+# Python dictionary any() method
 
-#  The all() function returns True if all elements in the given iterable are true. If not, it returns False.
-# The syntax of the all() function is: all(iterable)
+#  Return True if any key of the dictionary is true. If the dictionary is empty, return False.
+# The syntax of the any() function is: any(iterable)
 
-s = {0: 'False', 1: 'False'}
-print(all(s))  # O/p : False
+# 0 is False
+d = {0: 'False'}
+print(any(d))  # O/p : False
 
-s = {1: 'True', 2: 'True'}   # O/p : True
-print(all(s))
+# 1 is True
+d = {0: 'False', 1: 'True'}
+print(any(d))  # O/p : True
 
-s = {1: 'True', False: 0}  # O/p : False
-print(all(s))
+# 0 and False are false
+d = {0: 'False', False: 0}
+print(any(d))  # O/p : False
 
-s = {}
-print(all(s))  # O/p : True
+# iterable is empty
+d = {}
+print(any(d))  # O/p : False
 
-s = {'0': 'True'}
-print(all(s))  # O/p : True
+# 0 is False
+# '0' is True
+d = {'0': 'False'}
+print(any(d))  # O/p : True
 
 
 
