@@ -1,26 +1,34 @@
 
-# Python Dictionary sorted() method
+# Python Dictionary keys() method
 
-# The sorted() function sorts the elements of a given iterable in a specific order
-# (ascending or descending) and returns it as a list.
-# The syntax of the sorted() function is: sorted(iterable, key=None, reverse=False)
-# iterable - A sequence (string, tuple, list) or collection (set, dictionary, frozen set) or any other iterator.
-# reverse (Optional) - If True, the sorted list is reversed (or sorted in descending order). Defaults to False if not provided.
-# key (Optional) - A function that serves as a key for the sort comparison. Defaults to None.
+# The keys() method extracts the keys of the dictionary and returns the list of keys as a view object.
+# The syntax of the keys() function is: dict.keys()
+#  object that displays the list of all the keys
 
-# dictionary
-py_dict = {'e': 1, 'a': 2, 'u': 3, 'o': 4, 'i': 5}
+numbers = {1: 'one', 2: 'two', 3: 'three'}
 
-# sorted based ok key*
+# extracts the keys of the dictionary
+dictionaryKeys = numbers.keys()
 
-print(sorted(py_dict))  # O/p : ['a', 'e', 'i', 'o', 'u']
+print(dictionaryKeys)
+# Output: dict_keys([1, 2, 3])
 
-print(sorted(py_dict, reverse=True))  # O/p : ['u', 'o', 'i', 'e', 'a']
+employee = {'name': 'Phill', 'age': 22}
 
-py_dict1 = {1: 112, 6: 143, 3: 233, 5: 421, 7: 345}
+# extracts the dictionary keys
+dictionaryKeys = employee.keys()
 
-print(sorted(py_dict1))  # O/p : [1, 3, 5, 6, 7]
+print('Before dictionary update:', dictionaryKeys)
 
-print(sorted(py_dict1, reverse=True))  # O/p : [7, 6, 5, 3, 1]
+# adds an element to the dictionary
+employee.update({'salary': 3500.0})
+
+# prints the updated view object
+print('After dictionary update:', dictionaryKeys)
+
+# Output:
+# Before dictionary update: dict_keys(['name', 'age'])
+# After dictionary update: dict_keys(['name', 'age', 'salary'])
+
 
 
