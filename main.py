@@ -1,20 +1,17 @@
 
-# Creating a dictionary datatype in Python.
+# Adding Elements to a Python Dictionary using key
 
-# Python dictionary is an ordered collection (starting from Python 3.7) of items. It stores elements
-# in key/value pairs. Here, keys are unique identifiers that are associated with each value.
+# add elements to a dictionary using the name of the dictionary with []
 
-# Syntax : dictionary_name = { key1 = value1, key2 = value2 , ......}
+# Syntax : dictionary_name[key_new] = value
 
-#  key and value with similar datatype
-capital_city = {"Nepal": "Kathmandu", "Italy": "Rome", "England": "London"}
-print(capital_city)
+capital_city = {"Nepal": "Kathmandu", "England": "London"}
+print("Initial Dictionary: ",capital_city)
+
+capital_city["India"] = "Delhi"
+
+print("Updated Dictionary: ", capital_city)
 # Output
-# {'Nepal': 'Kathmandu', 'Italy': 'Rome', 'England': 'London'}
-
-# dictionary with keys and values of different data types
-numbers = {1: "One", 2: "Two", 3: "Three"}
-print(numbers)
-# Output
-# [3: "Three", 1: "One", 2: "Two"]
+# Initial Dictionary:  {'Nepal': 'Kathmandu', 'England': 'London'}
+# Updated Dictionary:  {'Nepal': 'Kathmandu', 'England': 'London', 'India': 'Delhi'}
 
