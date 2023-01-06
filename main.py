@@ -1,30 +1,21 @@
 
-# Removing elements from Dictionary datatype in python using del
+# Dictionary Membership Test in python using in and not in over key
 
-# The del statement removes the element associated with the key .
+# test if a key is in a dictionary or not using the keyword in. Notice that the membership test is only
+# for the keys and not for the values.
 # Syntax :  del dictionary_name[key]
 
-student_id = {111: "Crack", 112: "Mack", 113: "Joy"}
+# Membership Test for Dictionary Keys
+squares = {1: 1, 3: 9, 5: 25, 7: 49, 9: 81}
 
-print("Before delete : ", student_id)
+# Output: True
+print(1 in squares)  # O/p :  True
 
-del  student_id[113]
+print(2 not in squares)  # O/p : True
 
-print("After delete : ", student_id)
-# Output
-# Before delete :  {111: 'Crack', 112: 'Mack', 113: 'Joy'}
-# After delete :  {111: 'Crack', 112: 'Mack'}
+# membership tests for key only not value
+print(49 in squares)  # O/p : False
 
-# ------Delete the whole dictionary using the del----------
-
-student_id = {114: "Tom", 115: "Jerry", 116: "Mario"}
-
-# delete student_id dictionary
-del student_id     # deleted the student_id dictionary and student_id doesn't exist anymore
-
-print(student_id)
-# Output :
-# NameError: name 'student_id' is not defined
 
 
 
