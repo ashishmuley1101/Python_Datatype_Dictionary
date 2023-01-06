@@ -1,15 +1,30 @@
 
-# Accessing Elements from Dictionary datatype in python
+# Removing elements from Dictionary datatype in python using del
 
-# use the keys to access their corresponding values.
-
-# Syntax : dictionary_name[key] or print(dictionary_name[key])
+# The del statement removes the element associated with the key .
+# Syntax :  del dictionary_name[key]
 
 student_id = {111: "Crack", 112: "Mack", 113: "Joy"}
-print("Dictionary: ", student_id[111])
-print("Dictionary: ", student_id[113])
+
+print("Before delete : ", student_id)
+
+del  student_id[113]
+
+print("After delete : ", student_id)
 # Output
-# Dictionary:  Crack
-# Dictionary:  Joy
+# Before delete :  {111: 'Crack', 112: 'Mack', 113: 'Joy'}
+# After delete :  {111: 'Crack', 112: 'Mack'}
+
+# ------Delete the whole dictionary using the del----------
+
+student_id = {114: "Tom", 115: "Jerry", 116: "Mario"}
+
+# delete student_id dictionary
+del student_id     # deleted the student_id dictionary and student_id doesn't exist anymore
+
+print(student_id)
+# Output :
+# NameError: name 'student_id' is not defined
+
 
 
