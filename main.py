@@ -1,30 +1,17 @@
 
-# Python dictionary any() method
+# Python dictionary len() method
 
-#  Return True if any key of the dictionary is true. If the dictionary is empty, return False.
-# The syntax of the any() function is: any(iterable)
+#  The len() function returns the number of items (length) in an object.
+# The syntax of the len() function is: len(iterable)
 
-# 0 is False
-d = {0: 'False'}
-print(any(d))  # O/p : False
+testDict = {1: 'one', 2: 'two'}
+print(testDict, 'length is', len(testDict))
 
-# 1 is True
-d = {0: 'False', 1: 'True'}
-print(any(d))  # O/p : True
+testDict = {}
+print(testDict, 'length is', len(testDict))
 
-# 0 and False are false
-d = {0: 'False', False: 0}
-print(any(d))  # O/p : False
-
-# iterable is empty
-d = {}
-print(any(d))  # O/p : False
-
-# 0 is False
-# '0' is True
-d = {'0': 'False'}
-print(any(d))  # O/p : True
-
-
+# Output :
+# {1: 'one', 2: 'two'} length is 2
+# {} length is 0
 
 
