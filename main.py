@@ -1,34 +1,38 @@
 
-# Python Dictionary keys() method
+# Python Dictionary values() method
 
-# The keys() method extracts the keys of the dictionary and returns the list of keys as a view object.
-# The syntax of the keys() function is: dict.keys()
-#  object that displays the list of all the keys
+# The values() method returns a view object that displays a list of all the values in the dictionary.
+# The syntax of the values() function is: dictionary.values()
+#  object that displays the list of all the values
 
-numbers = {1: 'one', 2: 'two', 3: 'three'}
+marks = {'Physics':67, 'Maths':87}
 
-# extracts the keys of the dictionary
-dictionaryKeys = numbers.keys()
+print(marks.values())
+# Output: dict_values([67, 87])
 
-print(dictionaryKeys)
-# Output: dict_keys([1, 2, 3])
+# random sales dictionary
+sales = { 'apple': 2, 'orange': 3, 'grapes': 4 }
 
-employee = {'name': 'Phill', 'age': 22}
+print(sales.values())
+# Output:  dict_values([2, 4, 3])
 
-# extracts the dictionary keys
-dictionaryKeys = employee.keys()
+# --------values() works when a dictionary is modified------------
 
-print('Before dictionary update:', dictionaryKeys)
+# random sales dictionary
+sales = { 'apple': 2, 'orange': 3, 'grapes': 4 }
 
-# adds an element to the dictionary
-employee.update({'salary': 3500.0})
+values = sales.values()
 
-# prints the updated view object
-print('After dictionary update:', dictionaryKeys)
+print('Original items:', values)
 
-# Output:
-# Before dictionary update: dict_keys(['name', 'age'])
-# After dictionary update: dict_keys(['name', 'age', 'salary'])
+# delete an item from dictionary
+del sales['apple']
+
+print('Updated items:', values)
+
+# Output
+# Original items: dict_values([2, 4, 3])
+# Updated items: dict_values([4, 3])
 
 
 
